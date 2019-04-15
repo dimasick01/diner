@@ -1,0 +1,87 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #3b3f45;
+	border: 25px solid white;
+	min-height: 100%;
+	box-sizing: border-box;
+	font-family: calibri;
+}
+html{
+   height: 100%;
+}
+header{
+	background: #4a4f56;
+	color:#eb7e7f;
+	text-align: center;
+	padding: 25px 20px 20px;
+}
+header h1{
+	font-size: 36px;
+}
+header p{
+	font-size: 20px;
+}
+main{
+	width: 100%;
+	max-width: 800px;
+	margin:0 auto;
+	padding-top: 40px;
+}
+footer{
+	width: 100%;
+	max-width: 800px;
+	margin: 40px auto 0;
+	color: #eb7e7f;
+	background: #4a4f56;
+	text-align: center;
+	padding: 20px;
+}
+form div{
+	position: relative;
+}
+form input {
+	position: absolute;
+	top: 24px;
+	left:15px;
+	width: 25px;
+	height: 25px;
+}
+form label{
+	padding: 15px 20px 15px 55px;
+	color: white;
+	background: #88839e;
+	display: block;
+	font-size: 26px;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	cursor: pointer;
+	transition: all 0.3s;
+
+}
+form div:nth-child(even) label{
+	background: #7a7593;
+}
+form div label:hover{
+    border-color: #fff;
+    background-color: #625e77;
+}
+small{
+	font-size: 18px;
+	color: rgb(205,196,187);
+}
+small::before{
+	content: "("
+}
+small:after{
+	content: ")"
+}
+input:checked + label{
+    color: #a3a0b5;
+    text-decoration: line-through;
+}
+input:checked + label small{
+	color: #a3a0b5;
+}
